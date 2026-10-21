@@ -1,10 +1,11 @@
-import Etapas from "../components/Etapas";
+
+import Formulario from "../components/Formulario";
 
 
 const Home = () => {
     return (
         <>
-            <Etapas/>
+            <Formulario />
         </>
     );
 }

@@ -1,4 +1,4 @@
-const Home = () => {
+const Formulario = () => {
     return (
         <div
         className="w-full max-w-5xl mx-auto text-white rounded-lg overflow-hidden shadow-2xl my-8">
@@ -24,4 +24,4 @@ const Home = () => {
      );
 }
  
-export default Home;
+export default Formulario;
