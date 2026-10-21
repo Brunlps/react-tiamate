@@ -1,7 +1,13 @@
+import BannerDinamico from "../components/BannerDinamico";
+
 const Home = () => {
     return (
         <>
-            <h1>Home</h1>
+            <BannerDinamico 
+                titulo = "Um café quentinho aqui na Tiamte muda o dia."
+                descricao = "Venha experimentar os melhores sabores."
+                imagem = "./Banner_01 1.png"
+            />            
         </>
     );
 }
