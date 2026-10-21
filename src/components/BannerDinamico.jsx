@@ -1,5 +1,7 @@
 const BannerDinamico = ({ titulo, descricao, imagem }) => {
 
+    
+
     return (
         <div className="relative w-full">
             {/* Div do fundo com a imagem dinâmica */}
