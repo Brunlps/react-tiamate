@@ -2,15 +2,13 @@ const Diferenciais = () => {
     return (
 
 
-<div>
+<div> 
 
+<img src="Diferenciais 1".png></img>
 </div>
 
 
-<div>
 
-    
-</div>
 
       );
 }
