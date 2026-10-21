@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import PageLayout from "../layouts/PageLayout";
 import NossoCafe from "../pages/NossoCafe";
 import Login from "../pages/auth/Login";
+import Video from "../components/Video";
 
 const Rotas = () => {
     return (  
@@ -11,8 +12,10 @@ const Rotas = () => {
                 <Route path="/" element={<PageLayout />}>
                     <Route index element={<Home />} />
                     <Route path="nosso-cafe" element={<NossoCafe />} />
+                    
                 </Route>
                 <Route path="/login" element={<Login />} />
+                
             </Routes>
         </BrowserRouter>
     );
