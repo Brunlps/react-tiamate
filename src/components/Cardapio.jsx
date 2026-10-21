@@ -11,7 +11,7 @@ const Cardapio = () => {
 
             <div className="flex justify-center align-items *:w-60 mt-18">
                 <button className="cursor-pointer"><BiLeftArrowAlt /></button>
-                <img src="./bebida-01.png" alt="" />
+                <img src={"./bebida-01.png"} alt="" />
                 <img src="./bebida-02.png" alt="" />
                 <img src="./bebida-03.png" alt="" />
                 <button className="cursor-pointer -mr-15"><BiRightArrowAlt /></button>
