@@ -1,7 +1,10 @@
+import Etapas from "../components/Etapas";
+
+
 const Home = () => {
     return (
         <>
-            <h1>Home</h1>
+            <Etapas/>
         </>
     );
 }
