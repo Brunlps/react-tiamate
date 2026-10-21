@@ -1,0 +1,10 @@
+{
+    "depoimentos": [
+        {
+            "nota": 5,
+            "depoimento": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magnam quo autem sunt cumque quaerat, aspernatur saepe dolores.",
+            "nome": "Joe",
+            "foto": "https://i.pinimg.com/236x/d1/e3/d2/d1e3d2a12bc3d0221898c4391dffcfff.jpg"
+        }
+    ]
+}
