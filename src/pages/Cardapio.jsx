@@ -6,7 +6,8 @@ const Cardapio = () => {
             <BannerDinamico
                 descricao="O verdadeiro sabor do Café."
                 imagem="/BannerCardapio.png"
-                posicaoTopo="top-[110px]"
+                posicaoTopo="top-[151px]"
+                alinhamento="left-[133px]"
             />
         </>
     );

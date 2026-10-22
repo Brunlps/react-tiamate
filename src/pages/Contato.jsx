@@ -6,7 +6,8 @@ const Contato = () => {
             <BannerDinamico
                 descricao="Depois do café eu me expresso."
                 imagem="/BannerContato.png"
-                posicaoTopo="top-[110px]"
+                posicaoTopo="top-[151px]"
+                alinhamento="left-[133px]"
             />
         </>
      );
