@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import PageLayout from "../layouts/PageLayout";
 import NossoCafe from "../pages/NossoCafe";
 import Login from "../pages/auth/Login";
+import Video from "../components/Video";
 import Franquia from "../pages/Franquia";
 import Contato from "../pages/Contato";
 import Cardapio from "../pages/Cardapio";
@@ -19,6 +20,7 @@ const Rotas = () => {
                     <Route path="cardapio" element={<Cardapio />} />
                 </Route>
                 <Route path="/login" element={<Login />} />
+                
             </Routes>
         </BrowserRouter>
     );
