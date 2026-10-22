@@ -3,11 +3,12 @@ import BannerDinamico from "../components/BannerDinamico";
 const Home = () => {
     return (
         <>
-            <BannerDinamico 
-                titulo = "Um café quentinho aqui na Tiamte muda o dia."
-                descricao = "Venha experimentar os melhores sabores."
-                imagem = "./Banner_01 1.png"
-            />            
+            <BannerDinamico
+                titulo="Um café quentinho"
+                descricao={<>aqui na Tiamate<br />muda o dia.</>}
+                imagem="/Banner_01.png"
+                posicaoTopo="top-[110px]"
+            />
         </>
     );
 }

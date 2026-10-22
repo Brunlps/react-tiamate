@@ -1,7 +1,13 @@
+import BannerDinamico from "../components/BannerDinamico";
+
 const Contato = () => {
     return ( 
         <>
-            Contato
+            <BannerDinamico
+                descricao="Depois do café eu me expresso."
+                imagem="/BannerContato.png"
+                posicaoTopo="top-[110px]"
+            />
         </>
      );
 }

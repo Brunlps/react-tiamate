@@ -1,7 +1,13 @@
+import BannerDinamico from "../components/BannerDinamico";
+
 const Cardapio = () => {
     return (
         <>
-            Cardapio
+            <BannerDinamico
+                descricao="O verdadeiro sabor do Café."
+                imagem="/BannerCardapio.png"
+                posicaoTopo="top-[110px]"
+            />
         </>
     );
 }
