@@ -1,15 +1,12 @@
 const Video = () => {
     return (
         
-        <div className=" relative bg-[url('/Rectangle-56.png')] bg-cover bg-center h-125 flex justify-center items-center">
-            <div className="absolute inset-0 bg-black/40"></div>
-            <button className="cursor-pointer relative h-fit">
-                <img src="/Group.png" alt=" Ícone do YouTube" />
-                <p className="text-[18px] text-white font-normal mt-5">Assistir Vídeo</p>
-            </button>
+        <div className="w-full relative">
+            <div className="w-full h-full absolute top-0 left-0 bg-black/70"></div>
+            <video autoPlay loop muted playsInline className="w-full h-125 object-cover object-center">
+                <source src="/tiamate.mp4" type="video/mp4"/>
+            </video>
         </div>
-        
-        
     );
 }
  
