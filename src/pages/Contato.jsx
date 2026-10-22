@@ -1,7 +1,14 @@
+import BannerDinamico from "../components/BannerDinamico";
+
 const Contato = () => {
     return ( 
         <>
-            Contato
+            <BannerDinamico
+                descricao={<>Depois do café eu <br className="lg:inline"/>me expresso.</>}
+                imagem="/BannerContato.png"
+                posicaoTopo="top-[151px]"
+                alinhamento=" left-4 md:left-[133px]"
+            />
         </>
      );
 }
