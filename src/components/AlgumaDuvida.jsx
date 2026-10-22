@@ -64,14 +64,14 @@ const AlgumaDuvida = ({ onSubmit }) => {
 
 
     return (
-        <div className="w-full py-16 px-6 md:px-16 flex justify-center">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[570px_1fr] gap-12 md:gap-16 items-start">
+        <div className="w-full py-10 md:py-16 px-4 sm:px-6 md:px-10 lg:px-16 flex justify-center">
+            <div className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] xl:grid-cols-[570px_1fr] gap-10 xl:gap-16 items-start">
 
-                <div className="w-full md:w-[570px] flex flex-col gap-4">
-                    <h2 className="text-[50px] font-bold text-[#A97744]">
+                <div className="w-full flex flex-col gap-4">
+                    <h2 className="text-[32px] sm:text-[40px] xl:text-[50px] font-bold text-[#A97744]">
                         Alguma dúvida?
                     </h2>
-                    <p className="text-[18px] text-gray-00 text-[#3B2416]">
+                    <p className="text-[16px] sm:text-[18px] text-[#3B2416]">
                         Deixe sua mensagem
                     </p>
                     <form onSubmit={handleSubmit} className="flex flex-col gap-4 mt-2">
@@ -83,7 +83,7 @@ const AlgumaDuvida = ({ onSubmit }) => {
                                 value={form.nome}
                                 onChange={handleChange}
                                 placeholder="Nome e Sobrenome"
-                                className="w-full max-w-[570px] h-[60px] p-3 rounded-[5px] bg-[#E7E1DF] text-gray-800 placeholder-gray-400 outline-none focus:ring-2 focus:ring-[#E5BA73]"
+                                className="w-full h-[50px] sm:h-[60px] p-3 rounded-[5px] bg-[#E7E1DF] text-gray-800 placeholder-gray-400 outline-none focus:ring-2 focus:ring-[#E5BA73]"
                             />
                         </div>
                         <div>
@@ -94,7 +94,7 @@ const AlgumaDuvida = ({ onSubmit }) => {
                                 value={form.email}
                                 onChange={handleChange}
                                 placeholder="email@exemplo.com"
-                                className="w-full max-w-[570px] h-[60px] p-3 rounded-[5px] bg-[#E7E1DF] text-gray-800 placeholder-gray-400 outline-none focus:ring-2 focus:ring-[#E5BA73]"
+                                className="w-full h-[50px] sm:h-[60px] p-3 rounded-[5px] bg-[#E7E1DF] text-gray-800 placeholder-gray-400 outline-none focus:ring-2 focus:ring-[#E5BA73]"
                             />
                         </div>
                         <div>
@@ -105,7 +105,7 @@ const AlgumaDuvida = ({ onSubmit }) => {
                                 value={form.mensagem}
                                 onChange={handleChange}
                                 placeholder="Mensagem"
-                                className="w-full max-w-[570px] h-[241px] p-3 rounded-[5px] bg-[#E7E1DF] text-gray-800 placeholder-gray-400 outline-none resize-none focus:ring-2 focus:ring-[#E5BA73]"
+                                className="w-full h-[180px] sm:h-[241px] p-3 rounded-[5px] bg-[#E7E1DF] text-gray-800 placeholder-gray-400 outline-none resize-none focus:ring-2 focus:ring-[#E5BA73]"
                             ></textarea>
                         </div>
                         <button
@@ -124,8 +124,8 @@ const AlgumaDuvida = ({ onSubmit }) => {
                     </form>
                 </div>
 
-                <div className="flex flex-col items-start justify-start gap-6 md:pt-[142px]">
-                    <div className="flex items-center justify-between w-[393px] max-w-full">
+                <div className="w-full flex flex-col items-start justify-start gap-6 lg:pt-[142px]">
+                    <div className="flex items-center justify-between w-full max-w-[393px]">
                         <a href='https://www.facebook.com/tiamatecoffee/?locale=pt_BR'
                             target="_blank"
                             rel="noopener noreferrer"
