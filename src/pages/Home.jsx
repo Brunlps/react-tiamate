@@ -1,10 +1,9 @@
-import Etapas from "../components/Etapas";
-
+import Video from "../components/Video";
 
 const Home = () => {
     return (
         <>
-            <Etapas/>
+            <Video />
         </>
     );
 }
