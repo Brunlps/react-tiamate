@@ -1,12 +1,6 @@
 import { useState } from 'react';
 import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
 
-const redes = [
-    { icon: <FaFacebookF />, href: '#', label: 'Facebook' },
-    { icon: <FaInstagram />, href: '#', label: 'Instagram' },
-    { icon: <FaYoutube />, href: '#', label: 'YouTube' },
-    { icon: <FaLinkedinIn />, href: '#', label: 'LinkedIn' },
-];
 
 const initialForm = { nome: '', email: '', mensagem: '' };
 
@@ -132,16 +126,28 @@ const AlgumaDuvida = ({ onSubmit }) => {
 
                 <div className="flex flex-col items-start justify-start gap-6 md:pt-[142px]">
                     <div className="flex items-center justify-between w-[393px] max-w-full">
-                        <a href="#" className="w-[58.7px] h-[57.5px] rounded-full bg-[#A97744] flex items-center justify-center text-white text-[36px] hover:bg-[#8a6238] transition-colors">
+                        <a href='https://www.facebook.com/tiamatecoffee/?locale=pt_BR'
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-[58.7px] h-[57.5px] rounded-full bg-[#A97744] flex items-center justify-center text-white text-[36px] hover:bg-[#8a6238] transition-colors">
                             <FaFacebookF />
                         </a>
-                        <a href="#" className="w-[58.7px] h-[57.5px] rounded-full bg-[#A97744] flex items-center justify-center text-white text-[36px] hover:bg-[#8a6238] transition-colors">
+                        <a href='https://www.instagram.com/tiamatefortaleza/'
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-[58.7px] h-[57.5px] rounded-full bg-[#A97744] flex items-center justify-center text-white text-[36px] hover:bg-[#8a6238] transition-colors">
                             <FaInstagram />
                         </a>
-                        <a href="#" className="w-[58.7px] h-[57.5px] rounded-full bg-[#A97744] flex items-center justify-center text-white text-[36px] hover:bg-[#8a6238] transition-colors">
+                        <a href='https://www.youtube.com/watch?v=RWCP7z8ufiA'
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-[58.7px] h-[57.5px] rounded-full bg-[#A97744] flex items-center justify-center text-white text-[36px] hover:bg-[#8a6238] transition-colors">
                             <FaYoutube />
                         </a>
-                        <a href="#" className="w-[58.7px] h-[57.5px] rounded-full bg-[#A97744] flex items-center justify-center text-white text-[36px] hover:bg-[#8a6238] transition-colors">
+                        <a href='https://www.linkedin.com/company/tiamatecoffee/home/'
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-[58.7px] h-[57.5px] rounded-full bg-[#A97744] flex items-center justify-center text-white text-[36px] hover:bg-[#8a6238] transition-colors">
                             <FaLinkedinIn />
                         </a>
                     </div>
