@@ -1,9 +1,11 @@
-import Video from "../components/Video";
+import FitCultural from "../components/FitCultural";
+
 
 const Home = () => {
     return (
         <>
-            <Video />
+            <h1>Home</h1>
+            <FitCultural />
         </>
     );
 }
