@@ -59,7 +59,10 @@ const FitCultural = () => {
 
                                     {/* Thumbnail do vídeo */}
                                     <img src="https://img.youtube.com/vi/RWCP7z8ufiA/maxresdefault.jpg" alt="Assistir vídeo"
-                                    className="w-full h-full object-cover rounded-lg" />
+                                        className="w-full h-full object-cover rounded-lg" />
+
+                                    {/* Overlay escuro cobrindo 100% imagem */}
+                                    <div className="absolute inset-0 bg-black/50 rounded-lg" />
 
                                     {/* Botão de play customizado */}
                                     <div className="absolute inset-0 flex items-center justify-center">
