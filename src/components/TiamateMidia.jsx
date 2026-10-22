@@ -1,30 +1,74 @@
-const TiamateMidia = () => (
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-    <div className="flex *:flex-1 py-25 px-32 text">
-        <div>
-            <img src="http://grupogracom.com.br/lugares-fortaleza.html" alt="O Povo" />
-            <h1>O Povo  </h1>
-            <p>Conheça cinco lugares no centro para ir com os amigos</p>
-            <button>Notícia Completa</button>
+
+
+const TiamateMidia = () => {
+
+    const noticias = [
+        {   id: 1, 
+            jornal:"O Povo",
+            imagem:"/img_opovo.png",
+            titulo:"Cafeteria é nova tendência de negócio em Salvador", 
+        },
+        {
+            id:2,
+            jornal:"VOS",
+            imagem:"/img_vos.png",
+            titulo:"Um gostinho moderno no coração de Fortaleza",
+        },
+        {
+            id:3,
+            jornal:"A Tarde",
+            imagem:"/img_atarde.png",
+            titulo:"Cafeteria é nova tendência de negócio em Salvador",
+        },
+    ];
+
+    return ( 
+      <section className="max-w-7xl mx-auto px-4 py-12 font-sans">
+
+      <div className="mb-10 left-0 text-left">
+          <span className="block text-sm md:text-base font-normal text-gray-700 tracking-wide">
+            Fique por dentro
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#b37d4e] mt-1">
+            Tiamate na Mídia
+          </h2>
         </div>
+
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {noticias.map((item) => (
+          <div key={item.id} className="flex flex-col group border border-gray-100 rounded-lg p-4 shadow-sm">
             
-        <div>
-            <img src="http://grupogracom.com.br/tiamate_moderno.html" alt="VOS" />
-            <h1>VOS</h1>
-            <p>Um gostinho moderno no coração de Fortaleza</p>
-            <button>Notícia Completa</button>
-        </div>
+            <div className="relative overflow-hidden rounded-lg aspect-[16/10] bg-gray-100">
+              <img 
+                src={item.imagem} 
+                alt={`Notícia do jornal ${item.jornal}`}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
 
-        <div>
-            <img src="" alt="A Tarde" />
-            <h1>A Tarde</h1>
-            <p>Cafeteria é nova tendência de negócio em Salvador</p>
-            <button>Notícia Completa</button>
-        </div>
+            <span className="text-sm font-bold text-amber-800 mt-4 uppercase">{item.jornal}</span>
+            <h3 className="text-xl font-semibold text-gray-900 mt-2 mb-6 leading-snug min-h-[56px]">
+              {item.titulo}
+            </h3>
 
+            
+            <Link 
+              to={`/noticia/${item.id}`} 
+              className="mt-auto block w-full text-center py-3 px-4 bg-amber-800 text-white font-medium rounded hover:bg-amber-900 transition-colors duration-200"
+            >
+              Notícia Completa
+            </Link>
 
-    </div>
+          </div>
+        ))}
+      </div>
+    </section>
 
-)
+    );
+}
  
 export default TiamateMidia;
