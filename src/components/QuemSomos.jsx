@@ -3,6 +3,7 @@ import { BiArrowBack, BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 
 const QuemSomos = () => {
 
+    const tamanho = document.querySelector("body").clientWidth <= 400 ? 400 : 600 
     const [posicao, setPosicao] = useState(0);
 
     function proximo(){
@@ -16,14 +17,17 @@ const QuemSomos = () => {
         }        
     }
 
+
+    
+
     return (
         <div className="flex flex-col justify-center lg:items-center *:flex-1 p-4 lg:py-25 lg:px-33.5 text-[#3B2416]">
-            <div>
+            <div className="flex flex-col items-center">
                 <h6 className="text-lg mb-3">Para os amantes de café</h6>
                 <h2 className="text-[#A97744] text-[50px] mb-8 font-bold">Quem Somos</h2>
-                <p className="text-[#3B2416] mb-11">Com um modelo de negocio sólido e rentavel, a Tiamate se destaca entre as melhores oportunidades de franquia pelas 4 razões que seguem:</p>
-                <div className="w-150 overflow-hidden">
-                    <div style={{ left: `-${posicao * 600}px`}} className={`flex w-[2400px] relative duration-200`}>
+                <p className="text-[#3B2416] mb-11 text-center md:text-left">Com um modelo de negocio sólido e rentavel, a Tiamate se destaca entre as melhores oportunidades de franquia pelas 4 razões que seguem:</p>
+                <div className="w-100 md:w-150 overflow-hidden">
+                    <div style={{ left: `-${posicao * tamanho}px`}} className={`flex w-[${tamanho * 4}px] relative duration-200`}>
                         <div className="flex items-center gap-4">
                             <img src="./icone1.png" alt="" />
                             <p>Universidade corporativa que auxilia na capacitação operacional e desenvolvimento de habilidades gerenciais</p>
