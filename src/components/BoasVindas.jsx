@@ -7,7 +7,7 @@ const BoasVindas = () => {
           <img src="./banner2.png" alt="Bebidas Tiamate" className="w-838px h-654px w-full h-auto object-cover" />
         </div>
 
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2"> 
 
           <p className="mb-2 text-base sm:text-lg">
             Para os amantes de café
