@@ -1,9 +1,11 @@
+import FitCultural from "../components/FitCultural";
 
 
 const Home = () => {
     return (
         <>
             
+            <FitCultural />
         </>
     );
 }
