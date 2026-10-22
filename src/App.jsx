@@ -1,11 +1,7 @@
-import Rotas from "./routes/Rotas";
+import Diferenciais from "./components/Diferenciais";
 
-const App = () => {
-  return ( 
-    <>
-      <Rotas />
-    </>
-   );
+function App() {
+  return <Diferenciais />;
 }
- 
+
 export default App;
