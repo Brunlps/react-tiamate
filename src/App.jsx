@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TiamateMidia from "./components/TiamateMidia";
+import Diferenciais from './components/Diferenciais'; 
 
 // Criamos um componente temporário simples para a página interna não dar erro
 const PaginaNoticia = () => (
@@ -15,9 +16,12 @@ function App() {
     <BrowserRouter>
       <Routes>
         
-        <Route path="/" element={<TiamateMidia />} />       
+        <Route path="/" element={<TiamateMidia />} /> 
+        <Route path="/diferenciais" element={<Diferenciais />} /> 
+           
         
         <Route path="/noticia/:id" element={<PaginaNoticia />} />
+        <Route path="/diferencias" element={<Diferenciais />} />
       </Routes>
     </BrowserRouter>
   );
