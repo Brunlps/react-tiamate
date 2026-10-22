@@ -43,10 +43,15 @@ const FitCultural = () => {
                     </div>
                 </div>
                 <div className="w-full max-w-6xl px-4 mt-10">
-                    <h2 className="text-[#A97744] text-2xl font-bold max-w-md md:font-bold">Coisas boas acontecem àqueles
+                    <h2 className="
+                        w-192.2 text-[25px] text-[#A97744]
+                        sm:text-4xl
+                        md:text-[25px]
+                        lg:w-192.5 lg:text-[50px]
+                        font-bold leading-tight">Coisas boas acontecem àqueles
                         que gostam de café</h2>
 
-                    <div className="w-full aspect-video mt-5 relative">
+                    <div className="w-full aspect-video mt-20 relative">
                         {
                             playing ? (
                                 <iframe className="absolute inset-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/RWCP7z8ufiA?autoplay=1"
@@ -68,7 +73,7 @@ const FitCultural = () => {
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         {/* Corrigido: "group-hover:bg-scale-110" → "group-hover:scale-110" (bg- não se aplica a scale) */}
                                         <img src="/thumbnailVideo.png" alt="Play"
-                                            className="w-40 h-30 group-hover:scale-110 transition-transform" />
+                                            className="w-25 h-20 md:w-40 md:h-30 group-hover:scale-110 transition-transform" />
                                     </div>
                                 </button>
                             )
