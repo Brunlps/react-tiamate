@@ -4,10 +4,10 @@ const Contato = () => {
     return ( 
         <>
             <BannerDinamico
-                descricao="Depois do café eu me expresso."
+                descricao={<>Depois do café eu <br className="lg:inline"/>me expresso.</>}
                 imagem="/BannerContato.png"
                 posicaoTopo="top-[151px]"
-                alinhamento="left-[133px]"
+                alinhamento=" left-4 md:left-[133px]"
             />
         </>
      );

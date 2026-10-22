@@ -5,26 +5,21 @@ const BannerDinamico = ({
     descricao, 
     imagem, 
     posicaoTopo = "top-[110px]", 
-    alinhamento = "left-[133px]" 
+    alinhamento = "left-10 md:left-[133px]" 
 }) => {
     return (
-        <div className="relative w-full overflow-hidden">
-            {/* Div do fundo com a imagem dinâmica usando <img> */}
+        <div className="relative w-full ">
             {/* Div do fundo com altura adaptável e a imagem dinâmica */}
-<div className="w-full h-[350px] sm:h-[420px] md:h-[490px] relative flex items-center text-white">
-    <img 
-        src={imagem} 
-        alt="Banner Background" 
-        className="absolute inset-0 w-full h-full object-cover -z-10"
-    />
-</div>
+            <div className="w-full h-[350px] sm:h-[420px] md:h-[490px] relative flex items-center text-white">
+                <img 
+                    src={imagem} 
+                    alt="Banner Background" 
+                    className="absolute inset-0 w-full h-full object-cover -z-10"
+                />
+            </div>
             
-            {/* 
-              Conteúdo responsivo:
-              - Em telemóveis: centralizado ou com margem menor segura (left-6 / right-6)
-              - Em telas médias/grandes (md:): aplica a posição personalizada que veio nas props
-            */}
-            <div className={`absolute ${posicaoTopo} left-6 sm:left-12 md:${alinhamento} max-w-[90%] md:max-w-[518px] z-10`}>
+            {/* Conteúdo responsivo */}
+            <div className={` absolute ${posicaoTopo} ${alinhamento} max-w-[85%] md:max-w-[518px] z-10 `}>
                 {titulo && (
                     <h1 className="text-yellow-500 text-[32px] sm:text-[45px] md:text-[55px] leading-[1.05] font-bold mb-3">
                         {titulo}

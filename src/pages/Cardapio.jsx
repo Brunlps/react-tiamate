@@ -4,10 +4,10 @@ const Cardapio = () => {
     return (
         <>
             <BannerDinamico
-                descricao="O verdadeiro sabor do Café."
+                descricao={<>O verdadeiro <br/> sabor do Café.</>}
                 imagem="/BannerCardapio.png"
                 posicaoTopo="top-[151px]"
-                alinhamento="left-[133px]"
+                alinhamento="left-4 md:left-[133px]"
             />
         </>
     );

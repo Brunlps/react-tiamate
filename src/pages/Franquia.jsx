@@ -8,7 +8,7 @@ const Franquia = () => {
                 descricao={<>Abra sua Franquia<br />Tiamate Coffee.</>}
                 imagem="/BannerFranquia.png"
                 posicaoTopo="top-[151px]"
-                alinhamento="right-[133px]"
+                alinhamento="right-[46px]"
             />
             <QuemSomos />
         </>
