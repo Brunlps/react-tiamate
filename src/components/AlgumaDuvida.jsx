@@ -14,7 +14,7 @@ const AlgumaDuvida = ({ onSubmit }) => {
 
     const [form, setForm] = useState(initialForm);
     const [erros, setErros] = useState({});
-    const [status, setStatus] = useState('indle');
+    const [status, setStatus] = useState('idle');
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -34,6 +34,8 @@ const AlgumaDuvida = ({ onSubmit }) => {
         }
         if (!form.email.trim()) {
             newErrors.email = 'Informe seu e-mail';
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
+            novosErros.email = 'E-mail inválido.';
         }
         if (!form.mensagem.trim()) {
             newErrors.mensagem = 'Escreva sua mensagem.';
@@ -78,11 +80,12 @@ const AlgumaDuvida = ({ onSubmit }) => {
                     <p className="text-[18px] text-gray-00 text-[#3B2416]">
                         Deixe sua mensagem
                     </p>
-                    <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4 mt-2">
+                    <form onSubmit={handleSubmit} className="flex flex-col gap-4 mt-2">
                         <div>
                             <input
                                 type="text"
                                 name="nome"
+                                required
                                 value={form.nome}
                                 onChange={handleChange}
                                 placeholder="Nome e Sobrenome"
@@ -93,6 +96,7 @@ const AlgumaDuvida = ({ onSubmit }) => {
                             <input
                                 type="email"
                                 name="email"
+                                required
                                 value={form.email}
                                 onChange={handleChange}
                                 placeholder="email@exemplo.com"
@@ -103,6 +107,7 @@ const AlgumaDuvida = ({ onSubmit }) => {
                             <textarea
                                 rows="4"
                                 name="mensagem"
+                                required
                                 value={form.mensagem}
                                 onChange={handleChange}
                                 placeholder="Mensagem"
