@@ -1,10 +1,10 @@
-import BemVindo from "../components/BemVindo";
+import BoasVindas from "../components/BoasVindas";
 import Etapas from "../components/Etapas";
 
 const Home = () => {
     return (
         <>
-            <BemVindo/>
+            <BoasVindas/>
         </>
     );
 }

@@ -1,4 +1,4 @@
-const BemVindo = () => {
+const BoasVindas = () => {
   return (
     <section className="bg-[#E7E1DF] py-10 px-5 sm:px-8 md:py-16 md:px-10 font-archivo text-[#3B2416] tracking-tight">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-10">
@@ -41,4 +41,4 @@ const BemVindo = () => {
   );
 };
 
-export default BemVindo;
+export default BoasVindas;
