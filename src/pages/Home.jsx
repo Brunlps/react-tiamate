@@ -1,17 +1,8 @@
-import ComponentAgradavel from "../pages/ComponenteAmbientAgradavel";
-
-const Home = () => {
-  return (
-    <>
-      <h1>Home</h1>
-      <ComponentAgradavel />
-    </>
-  );
-};
 import BannerDinamico from "../components/BannerDinamico";
-import Cardapio from "../components/Cardapio";
 import Depoimentos from "../components/Depoimentos";
 import FitCultural from "../components/FitCultural";
+import AmbientAgradavel from "./AmbientAgradavel";
+import Cardapio from "./Cardapio";
 
 
 const Home = () => {
@@ -24,7 +15,7 @@ const Home = () => {
                 posicaoTopo="top-[110px]"
             />
             <FitCultural />
-            <Ambi
+            <AmbientAgradavel />
             <Cardapio />
             <Depoimentos />
         </>
