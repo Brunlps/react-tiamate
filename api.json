@@ -51,5 +51,25 @@
             "contato": "(85) 99691 - 7642",
             "id": 3
         }
+    ],
+    "noticias": [
+        {
+            "id": 1,
+            "jornal": "O Povo",
+            "imagem": "/img_opovo.png",
+            "titulo": "Cafeteria é nova tendência de negócio em Salvador"
+        },
+        {
+            "id": 2,
+            "jornal": "VOS",
+            "imagem": "/img_vos.png",
+            "titulo": "Um gostinho moderno no coração de Fortaleza"
+        },
+        {
+            "id": 3,
+            "jornal": "A Tarde",
+            "imagem": "/img_atarde.png",
+            "titulo": "Cafeteria é nova tendência de negócio em Salvador"
+        }
     ]
 }

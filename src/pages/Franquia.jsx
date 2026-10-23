@@ -1,5 +1,6 @@
 import BannerDinamico from "../components/BannerDinamico";
 import QuemSomos from "../components/QuemSomos";
+import TiamateMidia from "../components/TiamateMidia";
 import Video from "../components/Video";
 
 const Franquia = () => {
@@ -13,6 +14,7 @@ const Franquia = () => {
             />
             <QuemSomos />
             <Video />
+            <TiamateMidia />
         </>
     );
 }
