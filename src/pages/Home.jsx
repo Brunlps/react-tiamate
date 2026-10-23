@@ -1,12 +1,13 @@
 import BannerDinamico from "../components/BannerDinamico";
 import Cardapio from "../components/Cardapio";
 import FitCultural from "../components/FitCultural";
+import Etapas from "../components/Etapas";
+import Depoimentos from "../components/Depoimentos";
 
 
 const Home = () => {
     return (
         <>
-
             <Etapas/>        
             <BannerDinamico
                 titulo="Um café quentinho"
@@ -16,6 +17,8 @@ const Home = () => {
             />
             <FitCultural />
             <Cardapio />
+            <Depoimentos/>
+
         </>
     );
 }
