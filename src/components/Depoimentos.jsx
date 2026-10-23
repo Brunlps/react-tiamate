@@ -1,9 +1,8 @@
-/* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useRef, useEffect } from "react";
 import { BiSolidRightArrowCircle } from "react-icons/bi";
 import { BiSolidLeftArrowCircle } from "react-icons/bi";
+import { BiSolidStar } from "react-icons/bi";
 import { AXIOS } from "../services";
-
 
 
 const Depoimentos = () => {
@@ -53,13 +52,17 @@ const Depoimentos = () => {
 
         <div ref={carrossel} className="flex gap-8 overflow-x-auto scrollbar-none overflow-auto scroll-smooth">
           {depoimentos.map((depoimento) => (
-            <div key={`d-${depoimento.id}`} className="h-65 w-80 shrink-0 rounded-lg bg-[#E7E1DF] p-6">
-              <img className="mb-5 w-30" src="./estrelas.png" alt="" />
+            <div key={`d-${depoimento.id}`} className="h-65 w-80 shrink-0 rounded-lg bg-[#E7E1DF] p-6 flex flex-col">
+                <div className="flex mb-2">
+                    {[...Array(depoimento.nota)].map((nota)=>(
+                        <BiSolidStar className="fill-amber-400" />
+                    ))
+                    }
+                </div>
+                <p className="text-justify"> {depoimento.depoimento} </p>
 
-              <p className="text-justify"> {depoimento.depoimento} </p>
-
-              <div className="mt-2 flex items-center gap-4">
-                <img className="w-15" src="./Retrato Circular em Preto e Branco.png" alt="" />
+              <div className="flex items-center gap-4 mt-auto">
+                <img className="w-15" src={depoimento.foto} alt="" />
                 <h1 className="font-bold">{depoimento.nome}</h1>
               </div>
             </div>

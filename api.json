@@ -5,28 +5,28 @@
             "nota": 5,
             "depoimento": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magnam quo autem sunt cumque quaerat, aspernatur saepe dolores.",
             "nome": "Joe",
-            "foto": "https://i.pinimg.com/236x/d1/e3/d2/d1e3d2a12bc3d0221898c4391dffcfff.jpg"
+            "foto": "./Retrato Circular em Preto e Branco.png"
         },
         {
             "id": 2,
             "nota": 4,
             "depoimento": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magnam quo autem sunt cumque quaerat, aspernatur saepe dolores.",
             "nome": "Uriel",
-            "foto": "https://i.pinimg.com/236x/d1/e3/d2/d1e3d2a12bc3d0221898c4391dffcfff.jpg"
+            "foto": "./Retrato Circular em Preto e Branco.png"
         },
         {
             "id": 3,
             "nota": 3,
             "depoimento": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magnam quo autem sunt cumque quaerat, aspernatur saepe dolores.",
             "nome": "Dani",
-            "foto": "https://i.pinimg.com/236x/d1/e3/d2/d1e3d2a12bc3d0221898c4391dffcfff.jpg"
+            "foto": "./Retrato Circular em Preto e Branco.png"
         },
         {
             "id": 4,
             "nota": 5,
             "depoimento": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magnam quo autem sunt cumque quaerat, aspernatur saepe dolores.",
             "nome": "Pamela",
-            "foto": "https://i.pinimg.com/236x/d1/e3/d2/d1e3d2a12bc3d0221898c4391dffcfff.jpg"
+            "foto": "./Retrato Circular em Preto e Branco.png"
         }
     ],
     "unidades": [
