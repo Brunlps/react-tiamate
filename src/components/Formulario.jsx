@@ -1,11 +1,9 @@
 import { useContext } from "react";
 import { MainContext } from "../contexts/MainProvider";
-import { LocalContext } from "../contexts/LocalContext";
 
 const Formulario = ({ nome }) => {
 
     const { setNome } = useContext(MainContext);
-    const { setEmail } = useContext(LocalContext);
 
     return (
         <div className="w-full flex flex-col md:flex-row bg-amber-950 min-h-screen items-center" >/
@@ -29,7 +27,7 @@ const Formulario = ({ nome }) => {
                         <input type="text" placeholder="Nome e Sobrenome" className="w-full bg-[#F5E7DA] placeholder:zinc-500 rounded-lg py-3 pl-12 outline-none focus:ring-2 focus:ring-amber-600" onChange={(e) => setNome(e.target.value)} />
                     
                     
-                        <input type="text" placeholder="email@gmail.com" className="w-full bg-[#F5E7DA] placeholder:zinc-500 rounded-lg py-3 pl-12 outline-none focus:ring-2 focus:ring-amber-600" onChange={(e) => setEmail(e.target.value)} />
+                        <input type="text" placeholder="email@gmail.com" className="w-full bg-[#F5E7DA] placeholder:zinc-500 rounded-lg py-3 pl-12 outline-none focus:ring-2 focus:ring-amber-600" />
                     
                     
                         <input type="text" placeholder="(**) ****-****" className="w-full bg-[#F5E7DA] placeholder:zinc-500 rounded-lg py-3 pl-12 outline-none focus:ring-2 focus:ring-amber-600" />
