@@ -1,14 +1,14 @@
+import BoasVindas from "../components/BoasVindas";
 import BannerDinamico from "../components/BannerDinamico";
-import Cardapio from "../components/Cardapio";
-import FitCultural from "../components/FitCultural";
-import Etapas from "../components/Etapas";
 import Depoimentos from "../components/Depoimentos";
-
+import FitCultural from "../components/FitCultural";
+import AmbientAgradavel from "./AmbientAgradavel";
+import Cardapio from "./Cardapio";
 
 const Home = () => {
     return (
         <>
-            <Etapas/>        
+            <BoasVindas/>
             <BannerDinamico
                 titulo="Um café quentinho"
                 descricao={<>aqui na Tiamate<br />muda o dia.</>}
@@ -16,9 +16,9 @@ const Home = () => {
                 posicaoTopo="top-[110px]"
             />
             <FitCultural />
+            <AmbientAgradavel />
             <Cardapio />
-            <Depoimentos/>
-
+            <Depoimentos />
         </>
     );
 }
