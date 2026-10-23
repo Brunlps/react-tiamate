@@ -1,3 +1,5 @@
+
+import Formulario from "../components/Formulario";
 import BoasVindas from "../components/BoasVindas";
 import BannerDinamico from "../components/BannerDinamico";
 import Depoimentos from "../components/Depoimentos";
@@ -18,6 +20,7 @@ const Home = () => {
             <FitCultural />
             <AmbientAgradavel />
             <Cardapio />
+            <Formulario />
             <Depoimentos />
         </>
     );
