@@ -47,16 +47,16 @@ const Header = () => {
                         <div id="overlay" onClick={() => { setMostraMenu(false) }} className={mostraMenu ? ("w-full h-screen bg-[#292625]/70 fixed top-0 left-0 duration-200") : ("opacity-0 invisible")}></div>
                         <ul className='w-2/4 h-screen flex flex-col items-start gap-10 relative z-10 bg-[#C7794A]'>
                             <li>
-                                <Link to="/" className="hover:text-yellow-500 text-[25px] text-black font-bold">Inicio</Link>
+                                <Link to="/" onClick={() => { setMostraMenu(false) }} className="hover:text-yellow-500 text-[25px] text-black font-bold">Inicio</Link>
                             </li>
                             <li>
-                                <Link to="/nosso-cafe" className="hover:text-yellow-500 whitespace-nowrap text-[25px] text-black font-bold mt-5 mb-5">Nosso Café</Link>
+                                <Link to="/nosso-cafe" onClick={() => { setMostraMenu(false) }} className="hover:text-yellow-500 whitespace-nowrap text-[25px] text-black font-bold mt-5 mb-5">Nosso Café</Link>
                             </li>
                             <li>
-                                <Link to="/contato" className="hover:text-yellow-500 text-[25px] text-black font-bold">Contato</Link>
+                                <Link to="/contato" onClick={() => { setMostraMenu(false) }} className="hover:text-yellow-500 text-[25px] text-black font-bold">Contato</Link>
                             </li>
                             <li>
-                                <Link to="/cardapio" className="hover:text-yellow-500 text-[25px] text-black font-bold">Cardápio</Link>
+                                <Link to="/cardapio" onClick={() => { setMostraMenu(false) }} className="hover:text-yellow-500 text-[25px] text-black font-bold">Cardápio</Link>
                             </li>
                         </ul>
                     </div>
