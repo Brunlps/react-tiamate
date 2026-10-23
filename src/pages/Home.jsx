@@ -1,3 +1,4 @@
+import AlgumaDuvida from "../components/AlgumaDuvida";
 import ComponentAgradavel from "../pages/ComponenteAmbientAgradavel";
 
 const Home = () => {
@@ -16,6 +17,7 @@ import FitCultural from "../components/FitCultural";
 const Home = () => {
     return (
         <>
+         <AlgumaDuvida/>
 
             <Etapas/>        
             <BannerDinamico
