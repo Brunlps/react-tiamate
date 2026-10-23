@@ -1,11 +1,13 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
+import { LocalContext } from '../contexts/LocalContext';
 
 
 const initialForm = { nome: '', email: '', mensagem: '' };
 
 const AlgumaDuvida = ({ onSubmit }) => {
 
+    const { email } = useContext(LocalContext)
     const [form, setForm] = useState(initialForm);
     const [erros, setErros] = useState({});
     const [status, setStatus] = useState('idle');
@@ -80,7 +82,7 @@ const AlgumaDuvida = ({ onSubmit }) => {
                                 type="text"
                                 name="nome"
                                 required
-                                value={form.nome}
+                                value={email}
                                 onChange={handleChange}
                                 placeholder="Nome e Sobrenome"
                                 className="w-full h-[50px] sm:h-[60px] p-3 rounded-[5px] bg-[#E7E1DF] text-gray-800 placeholder-gray-400 outline-none focus:ring-2 focus:ring-[#E5BA73]"

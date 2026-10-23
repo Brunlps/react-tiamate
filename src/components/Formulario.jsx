@@ -1,11 +1,18 @@
-const Formulario = () => {
+import { useContext } from "react";
+import { MainContext } from "../contexts/MainProvider";
+import { LocalContext } from "../contexts/LocalContext";
+
+const Formulario = ({ nome }) => {
+
+    const { setNome } = useContext(MainContext);
+    const { setEmail } = useContext(LocalContext);
 
     return (
         <div className="w-full flex flex-col md:flex-row bg-amber-950 min-h-screen items-center" >/
             <div className="w-full md:w-1/2 p-8 md:p-16 flex flex-col justify-center">
                 <span
                 className="text-[#CF9A5A] text-sm tracking-wider uppercase mb-2">
-                    Entre em contato
+                    Entre em contato: {nome}
                 </span>
                 <h1 
                 className="text-3xl md:text-4xl font-bold text-white mb-3">
@@ -19,10 +26,10 @@ const Formulario = () => {
                 <form
                 className="grid grid-cols-1 gap-4 mt-4 w-full max-w-md">
                     
-                        <input type="text" placeholder="Nome e Sobrenome" className="w-full bg-[#F5E7DA] placeholder:zinc-500 rounded-lg py-3 pl-12 outline-none focus:ring-2 focus:ring-amber-600" />
+                        <input type="text" placeholder="Nome e Sobrenome" className="w-full bg-[#F5E7DA] placeholder:zinc-500 rounded-lg py-3 pl-12 outline-none focus:ring-2 focus:ring-amber-600" onChange={(e) => setNome(e.target.value)} />
                     
                     
-                        <input type="text" placeholder="email@gmail.com" className="w-full bg-[#F5E7DA] placeholder:zinc-500 rounded-lg py-3 pl-12 outline-none focus:ring-2 focus:ring-amber-600" />
+                        <input type="text" placeholder="email@gmail.com" className="w-full bg-[#F5E7DA] placeholder:zinc-500 rounded-lg py-3 pl-12 outline-none focus:ring-2 focus:ring-amber-600" onChange={(e) => setEmail(e.target.value)} />
                     
                     
                         <input type="text" placeholder="(**) ****-****" className="w-full bg-[#F5E7DA] placeholder:zinc-500 rounded-lg py-3 pl-12 outline-none focus:ring-2 focus:ring-amber-600" />

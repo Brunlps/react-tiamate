@@ -6,8 +6,12 @@ import Depoimentos from "../components/Depoimentos";
 import FitCultural from "../components/FitCultural";
 import AmbientAgradavel from "./AmbientAgradavel";
 import Cardapio from "./Cardapio";
+import { useState } from "react";
 
 const Home = () => {
+    
+    
+
     return (
         <>
             <BoasVindas/>
@@ -20,7 +24,7 @@ const Home = () => {
             <FitCultural />
             <AmbientAgradavel />
             <Cardapio />
-            <Formulario />
+            <Formulario  />
             <Depoimentos />
         </>
     );

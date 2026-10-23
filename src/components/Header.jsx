@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { BiMenu } from 'react-icons/bi';
 import { Link } from 'react-router';
+import { MainContext } from './../contexts/MainProvider';
 
 const Header = () => {
     const [mostraMenu, setMostraMenu] = useState(false);
     const [tamanho, setTamanho] = useState(window.innerWidth);
+    const { nome } = useContext(MainContext)
     return (
         <>
             {tamanho > 780 ? (
@@ -28,7 +30,7 @@ const Header = () => {
                         
                     </div>
                     <div>
-                        <Link to="/franquia" className="bg-[#C7794A] text-[#3B2416] ml-35.75 xl:ml-10 lg:ml-3 font-semibold w-55 lg:w-50 h-13 flex items-center justify-center whitespace-nowrap px-5.75">Seja um Franqueado</Link>
+                        <Link to="/franquia" className="bg-[#C7794A] text-[#3B2416] ml-35.75 xl:ml-10 lg:ml-3 font-semibold w-55 lg:w-50 h-13 flex items-center justify-center whitespace-nowrap px-5.75">Seja um {nome}</Link>
                     </div>
                 </header>
             ) : (
