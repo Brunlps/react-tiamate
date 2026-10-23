@@ -4,6 +4,10 @@ import PageLayout from "../layouts/PageLayout";
 import NossoCafe from "../pages/NossoCafe";
 import Login from "../pages/auth/Login";
 import ComponentAgradavel from "../pages/ComponenteAmbientAgradavel"
+import Video from "../components/Video";
+import Franquia from "../pages/Franquia";
+import Contato from "../pages/Contato";
+import Cardapio from "../pages/Cardapio";
 
 const Rotas = () => {
     return (  
@@ -15,6 +19,7 @@ const Rotas = () => {
                     <Route path="ambiente-agradavel" element={<ComponentAgradavel/>} />
                 </Route>
                 <Route path="/login" element={<Login />} />
+                
             </Routes>
         </BrowserRouter>
     );
