@@ -1,20 +1,22 @@
 import { useState, useRef } from "react";
 import { BiSolidRightArrowCircle } from "react-icons/bi";
 import { BiSolidLeftArrowCircle } from "react-icons/bi";
+import { BiSolidStar } from "react-icons/bi";
+
 
 
 
 const Depoimentos = () => {
     const [depoimentos, setDepoimentos] = useState([
-        {id:1, nome: "laiz", depoimento:"muito bom o cafeasdadas asdwfasdas sfa a dawdasd a asd wdawda wd w dad adawfawfa"},
-        {id:2, nome: "lucas", depoimento:"muito bom o cafeasdadas asdwfasdas sfa a dawdasd a asd wdawda wd w dad adawfawfa"},
-        {id:3, nome: "amanda", depoimento:"muito bom o cafeasdadas asdwfasdas sfa a dawdasd a asd wdawda wd w dad adawfawfa"},
-        {id:4, nome: "rimance", depoimento:"muito bom o cafeasdadas asdwfasdas sfa a dawdasd a asd wdawda wd w dad adawfawfa"},
-        {id:5, nome: "homer", depoimento:"muito bom o cafeasdadas asdwfasdas sfa a dawdasd a asd wdawda wd w dad adawfawfa"},
-        {id:6, nome: "popister", depoimento:"muito bom o cafeasdadas asdwfasdas sfa a dawdasd a asd wdawda wd w dad adawfawfa"},
-        {id:7, nome: "lops", depoimento:"muito bom o cafeasdadas asdwfasdas sfa a dawdasd a asd wdawda wd w dad adawfawfa"},
-        {id:8, nome: "laiz", depoimento:"muito bom o cafeasdadas asdwfasdas sfa a dawdasd a asd wdawda wd w dad adawfawfa"},
-        {id:9, nome: "lucas", depoimento:"muito bom o cafeasdadas asdwfasdas sfa a dawdasd a asd wdawda wd w dad adawfawfa"}])
+        {id:1, nota: 5 , nome: "laiz", depoimento:"muito bom o cafeasdadas asdwfasdas sfa a dawdasd a asd wdawda wd w dad adawfawfa"},
+        {id:2, nota: 4, nome: "lucas", depoimento:"muito bom o cafeasdadas asdwfasdas sfa a dawdasd a asd wdawda wd w dad adawfawfa"},
+        {id:3, nota: 3, nome: "amanda", depoimento:"muito bom o cafeasdadas asdwfasdas sfa a dawdasd a asd wdawda wd w dad adawfawfa"},
+        {id:4, nota: 5, nome: "rimance", depoimento:"muito bom o cafeasdadas asdwfasdas sfa a dawdasd a asd wdawda wd w dad adawfawfa"},
+        {id:5, nota: 4, nome: "homer", depoimento:"muito bom o cafeasdadas asdwfasdas sfa a dawdasd a asd wdawda wd w dad adawfawfa"},
+        {id:6, nota: 1, nome: "popister", depoimento:"atendimento muito ruim, garçon nao tomava banho"},
+        {id:7, nota: 4, nome: "lops", depoimento:"muito bom o cafeasdadas asdwfasdas sfa a dawdasd a asd wdawda wd w dad adawfawfa"},
+        {id:8, nota: 2, nome: "laiz", depoimento:"banheiro tinha cheiro de goiaba, ODEIO goiaba"},
+        {id:9, nota: 2, nome: "lucas", depoimento:"muito bom o cafeasdadas asdwfasdas sfa a dawdasd a asd wdawda wd w dad adawfawfa"}])
 
     const carrossel = useRef(null)
 
@@ -56,7 +58,12 @@ return (
         <div ref={carrossel} className="flex gap-8 overflow-x-auto scrollbar-none overflow-auto scroll-smooth">
             {depoimentos.map((depoimento) => (
                 <div key={depoimento.id} className="flex flex-col h-60 w-80 mt-10 shrink-0 rounded-lg bg-[#E7E1DF] p-6">
-                <img className="mb-5 w-30" src="./estrelas.png" alt="" />
+                <div className="flex mb-2">
+                    {[...Array(depoimento.nota)].map((nota)=>(
+                        <BiSolidStar className="fill-amber-400" />
+                    ))
+                    }
+                </div>
 
                 <p className="text-justify"> {depoimento.depoimento} </p>
 
