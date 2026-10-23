@@ -1,7 +1,11 @@
 import Diferenciais from "./components/Diferenciais";
 
 function App() {
-  return <Diferenciais />;
+  return (
+    <>
+      <Rotas />
+    </>
+  );
 }
 
 export default App;
