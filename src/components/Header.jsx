@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <>
             {tamanho > 780 ? (
-                <header className="bg-[#292625] px-10.75 lg:px-4 h-27.5 w-screen flex items-center justify-between">
+                <header className="bg-[#292625] px-10.75 lg:px-4 xl:px-33.75 h-27.5 w-screen flex items-center justify-between">
                     <div className='flex items-center'>
                         <img src="./public/HeaderLogo_horizontal_01.png" className="w-37.5 h-[48.97px]" alt="" />
                         <ul className='flex ml-13.75 lg:ml-5 gap-11.25 lg:gap-5'>
