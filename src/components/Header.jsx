@@ -10,7 +10,7 @@ const Header = () => {
             {tamanho > 780 ? (
                 <header className="bg-[#292625] px-10.75 lg:px-4 xl:px-33.75 h-27.5 w-screen lg:w-full flex items-center justify-between">
                     <div className='flex items-center'>
-                        <img src="./public/HeaderLogo_horizontal_01.png" className="w-37.5 h-[48.97px]" alt="" />
+                        <img src="./HeaderLogo_horizontal_01.png" className="w-37.5 h-[48.97px]" alt="" />
                         <ul className='flex ml-13.75 lg:ml-5 gap-11.25 lg:gap-5'>
                             <li>
                                 <Link to="/" className="hover:text-yellow-500 text-[18px] text-[#F5E7DA]">Inicio</Link>
@@ -36,7 +36,7 @@ const Header = () => {
                     <div className="bg-[#292625] px-4.75  items-center justify-between lg:px-4 h-27.5 w-screen flex flex-row">
                         <div className='flex'>
                              <BiMenu onClick={event => mostraMenu ? (setMostraMenu(false)) : (setMostraMenu(true))} className='text-white size-15' />
-                            <img src={(tamanho < 700) ? ("./public/headerlogo.png"):("./public/HeaderLogo_horizontal_01.png")}  className={(tamanho < 700) ? ("mt-2 w-10 h-10") : ("w-37.5 h-[48.97px] mt-2")} alt="" />
+                            <img src={(tamanho < 700) ? ("./headerlogo.png"):("./HeaderLogo_horizontal_01.png")}  className={(tamanho < 700) ? ("mt-2 w-10 h-10") : ("w-37.5 h-[48.97px] mt-2")} alt="" />
                         </div>
                        
                         <Link to="/franquia" className="bg-[#C7794A] text-[#3B2416] xl:ml-10 lg:ml-3 font-semibold w-55 lg:w-50 h-13 flex items-center justify-center whitespace-nowrap px-5.75">Seja um Franqueado</Link>
