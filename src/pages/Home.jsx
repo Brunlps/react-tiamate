@@ -1,3 +1,13 @@
+import ComponentAgradavel from "../pages/ComponenteAmbientAgradavel";
+
+const Home = () => {
+  return (
+    <>
+      <h1>Home</h1>
+      <ComponentAgradavel />
+    </>
+  );
+};
 import BannerDinamico from "../components/BannerDinamico";
 import Cardapio from "../components/Cardapio";
 import Depoimentos from "../components/Depoimentos";
