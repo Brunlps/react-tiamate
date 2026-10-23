@@ -1,4 +1,4 @@
-import Diferenciais from "./components/Diferenciais";
+import Rotas from "./routes/Rotas";
 
 function App() {
   return (
