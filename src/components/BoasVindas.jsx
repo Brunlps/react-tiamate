@@ -1,7 +1,7 @@
 const BoasVindas = () => {
   return (
     <section className="bg-[#E7E1DF] text-[#3B2416] py-10 px-5 sm:px-8 md:py-16 md:px-10 font-archivo  tracking-tight">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-10">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-8 md:gap-10">
         <div>
           <img
             src="./banner2.png"
@@ -9,7 +9,7 @@ const BoasVindas = () => {
             className=" w-full h-auto object-cover" />
         </div>
 
-        <div className="w-full md:w-1/2">
+        <div className="w-full lg:w-1/2">
           <p className="mb-2 text-base sm:text-lg">
             Para os amantes de café
           </p>
