@@ -1,11 +1,13 @@
-import { useState, useRef } from "react";
+/* eslint-disable react-hooks/set-state-in-effect */
+import { useState, useRef, useEffect } from "react";
 import { BiSolidRightArrowCircle } from "react-icons/bi";
 import { BiSolidLeftArrowCircle } from "react-icons/bi";
+import { AXIOS } from "../services";
 
 
 
 const Depoimentos = () => {
-  const [depoimentos, setDepoimentos] = useState([{ id: 1, nome: "laiz", depoimento: "muito bom o cafe" }, { id: 2, nome: "lucas", depoimento: "muito bom o cafe" }, { id: 3, nome: "amanda", depoimento: "muito bom o cafe" }, { id: 4, nome: "rimance", depoimento: "muito bom o cafe" }, { id: 5, nome: "homer", depoimento: "muito bom o cafe" }, { id: 6, nome: "popister", depoimento: "muito bom o cafe" }, { id: 7, nome: "lops", depoimento: "muito bom o cafe" }, { id: 1, nome: "laiz", depoimento: "muito bom o cafe" }, { id: 2, nome: "lucas", depoimento: "muito bom o cafe" }, { id: 3, nome: "amanda", depoimento: "muito bom o cafe" }, { id: 4, nome: "rimance", depoimento: "muito bom o cafe" }, { id: 5, nome: "homer", depoimento: "muito bom o cafe" }, { id: 6, nome: "popister", depoimento: "muito bom o cafe" }, { id: 7, nome: "lops", depoimento: "muito bom o cafe" }, { id: 1, nome: "laiz", depoimento: "muito bom o cafe" }, { id: 2, nome: "lucas", depoimento: "muito bom o cafe" }, { id: 3, nome: "amanda", depoimento: "muito bom o cafe" }, { id: 4, nome: "rimance", depoimento: "muito bom o cafe" }, { id: 5, nome: "homer", depoimento: "muito bom o cafe" }, { id: 6, nome: "popister", depoimento: "muito bom o cafe" }, { id: 7, nome: "lops", depoimento: "muito bom o cafe" }])
+  const [depoimentos, setDepoimentos] = useState([]);
 
   const carrossel = useRef(null)
 
@@ -20,6 +22,19 @@ const Depoimentos = () => {
 
     carrossel.current.scrollLeft += carrossel.current.offsetWidth
   }
+
+  async function buscarDepoimentos() {
+    try {
+      const resposta = await AXIOS.get("/depoimentos");
+      setDepoimentos(resposta.data);
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
+
+  useEffect(() => {
+    buscarDepoimentos();
+  }, [])
 
 
   return (
