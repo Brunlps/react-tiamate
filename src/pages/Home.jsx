@@ -14,6 +14,7 @@ const Home = () => {
                 posicaoTopo="top-[110px]"
             />
             <FitCultural />
+            <Ambi
             <Cardapio />
             <Depoimentos />
         </>
