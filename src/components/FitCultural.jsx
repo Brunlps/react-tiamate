@@ -7,7 +7,7 @@ const FitCultural = () => {
 
     return (
         <>
-            <div className="flex flex-col items-center md:justify-center gap-5 m-1 p-10 px-4">
+            <div className="flex flex-col items-center md:justify-center md:py-30 md:px-30 md:gap-30 tracking-tight">
                 <div className="flex flex-col md:items-start justify-center gap-5 md:flex-row  md:gap-20">
                     <div className="flex flex-col gap-5">
                         <div className="flex gap-5 flex-wrap">
@@ -74,7 +74,7 @@ const FitCultural = () => {
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         {/* Corrigido: "group-hover:bg-scale-110" → "group-hover:scale-110" (bg- não se aplica a scale) */}
                                         <img src="/thumbnailVideo.png" alt="Play"
-                                            className="w-25 h-20 md:w-40 md:h-30 group-hover:scale-110 transition-transform" />
+                                            className="w-25 h-20 md:w-30 lg:w-30 group-hover:scale-110 transition-transform" />
                                     </div>
                                 </button>
                             )
